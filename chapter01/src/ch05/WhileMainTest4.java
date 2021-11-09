@@ -1,0 +1,42 @@
+package ch05;
+
+import java.util.Scanner;
+
+public class WhileMainTest4 {
+	// 메인함수 (코드의 시작점)
+	public static void main(String[] args) {
+		
+		//do ~ while
+		// 스캐너를 사용해서 사용자에 입력값을 받아서 덧셈 연산을 해주세요.
+		// 연산에 결과를 화면에 출력하는 프로그램을 만들어주세요.
+		
+//		Scanner scanner = new Scanner(System.in);
+//		System.out.println("값을 입력하세요 : ");
+//		int num = scanner.nextInt();
+//		int sum = 0;
+//		
+//		do {
+//			sum += num;
+//			num--;
+//		} while(num != 0);
+//		
+//		System.out.println("결괏값 : " + sum);
+		
+		
+		// 사용자가 0을 입력하면 프로그램을 종료시켜라
+		// 사용자가 입력한 값을 게속 덧셈하는 프로그램으로 변경시키자.
+		
+		Scanner scanner = new Scanner(System.in);
+		int sum = 0;
+		int num;
+		do {
+			System.out.println("덧셈할 값을 입력하세요.");
+			num = scanner.nextInt();
+			sum += num;
+		} while (num != 0);
+		
+		System.out.println("결괏값 : " + sum);
+		
+	}// end of main
+
+}// end of class
