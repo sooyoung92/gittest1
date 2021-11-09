@@ -3,50 +3,50 @@ package ch05;
 public class Wrapper_Ex3 {
 
 	public static void main(String[] args) {
-		
+
 		String str = "10";
 		String str2 = "10.5";
 		String str3 = "true";
-		
-		//  8 + "" --> String
+
+		// 8 + "" --> String
 		byte b = Byte.parseByte(str);
 		int i = Integer.parseInt(str);
 		short s = Short.parseShort(str);
 		long l = Long.parseLong(str);
-		
+		System.out.println("ë¬¸ìì—´ byteê°’ ë³€í™” : " + b);
+		System.out.println("ë¬¸ìì—´ intê°’ ë³€í™” : " + i);
+		System.out.println("--------------------------");
 		//
 		float f = Float.parseFloat(str2);
 		double d = Double.parseDouble(str2);
-		
+
 		boolean bool = Boolean.parseBoolean(str3);
 		System.out.println(bool);
-		if(Boolean.parseBoolean(str3)) {
-			System.out.println("boolean ÇüÀ¸·Î º¯°æ ¿Ï·á!!!");
+		if (Boolean.parseBoolean(str3)) {
+			System.out.println("boolean í˜•ìœ¼ë¡œ ë³€ê²½ ì™„ë£Œ!!!");
 		}
+		System.out.println("--------------------------");
 		
-		// ¹®Á¦ 1 
+		// ë¬¸ì œ 1
 		String str10 = "1001";
 		String str11 = "2001";
-		
-		// str10 °ú str11 À» µ¡¼À ¿¬»ê
-		// °á°ú°ª±îÁö Ãâ·Â
-		// str10 °ú str11 À» °ö¼À ¿¬»ê
-		// °á°ú°ª±îÁö Ãâ·Â
+
+		// str10 ê³¼ str11 ì„ ë§ì…ˆ ì—°ì‚°
+		// ê²°ê³¼ê°’ê¹Œì§€ ì¶œë ¥
+		// str10 ê³¼ str11 ì„ ê³±ì…ˆ ì—°ì‚°
+		// ê²°ê³¼ê°’ê¹Œì§€ ì¶œë ¥
 		int a = Integer.parseInt(str10);
 		int c = Integer.parseInt(str11);
 		int plus = a + c;
 		int gop = a * c;
-		System.out.println("µÎ StringÀÇ ÇÕ : " + plus);
-		System.out.println("µÎ StringÀÇ °ö : " + gop);
+		System.out.println("ë‘ Stringì˜ í•© : " + plus);
+		System.out.println("ë‘ Stringì˜ ê³± : " + gop);
+	
+		System.out.println("--------------------------");
 		
 		
+		// í•œê¸€ê¹¨ì§ í™•ì¸ ì½”ë“œ !!!!!
 		
-		
-		
-		System.out.println("¹®ÀÚ¿­ byte°ª º¯È­ : " + b);
-		System.out.println("¹®ÀÚ¿­ int°ª º¯È­ : " + i);
-		
-		System.out.println(b);
 	}
 
 }
